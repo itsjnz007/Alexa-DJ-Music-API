@@ -165,10 +165,19 @@ GET /find_stream_list/?query=Imagine&filter=songs
   ]
 }
 ```
+## Setting Up API URL and Playlists
+Visit the api url's **`<api_url>/setup/`** page for encoders.
+### Setting up API URL for Alexa Music
 
+1. Set up an API URL with any self hosted means.
+2. Copy the generated API URL and encode it in hexadecimal format without any spaces.
+3. Copy the encoded URL and use the Alexa app (mobile) to enter the command:
+   ```
+   Alexa, ask DJ to set api url <replace_with_encoded_url>.
+   ```
 ---
 
-### Summary of Required User API Responses:
+## Summary of Required User API Responses:
 The user-provided API must support:
 1. **Retrieving playlist details by ID.**
 2. **Streaming playlists, including track metadata and stream URLs.**
